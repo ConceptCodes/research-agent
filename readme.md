@@ -6,15 +6,17 @@ A research assistant powered by LangGraph and LangChain. This assistant is desig
 
 ## Tools
 
-- Wikipedia
-- DuckDuckGo Search
-- Wolfram Alpha
-- Google Scholar
-- Google Trends
-- Google Finance
-- PubMed
-- Merriam-Webster Dictionary
-- Stack Exchange
+| Tool                        | Description                                      | API Key Required |
+|-----------------------------|--------------------------------------------------|------------------|
+| Wikipedia                   | Free online encyclopedia                         |                  |
+| DuckDuckGo Search           | Privacy-focused search engine                    |                  |
+| Wolfram Alpha               | Computational knowledge engine                   | ✅               |
+| Google Scholar              | Search engine for scholarly articles             | ✅               |
+| Google Trends               | Analyzes the popularity of search queries        | ✅               |
+| Google Finance              | Financial news and data                          | ✅               |
+| PubMed                      | Database of biomedical literature                |                  |
+| Merriam-Webster Dictionary  | Online dictionary and thesaurus                  | ✅               |
+| Stack Exchange              | Network of Q&A communities                       |                  |
 
 
 ## Installation
@@ -22,7 +24,6 @@ A research assistant powered by LangGraph and LangChain. This assistant is desig
 1. Clone the repository:
     ```sh
     git clone https://conceptcodes.github.com/research-agent.git
-    ```
     cd research-agent
     ```
 
