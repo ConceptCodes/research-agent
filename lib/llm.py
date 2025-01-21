@@ -12,5 +12,5 @@ llm = None
 if os.getenv("OPENAI_API_KEY") != None:
     llm = ChatOpenAI(model=OPENAI_MODEL, temperature=0)
 else:
-    # Note: model must support tools
+    # Note: model must support tools -> https://ollama.com/search?c=tools
     llm = ChatOllama(model=OLLAMA_MODEL, temperature=0)
