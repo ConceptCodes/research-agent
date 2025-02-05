@@ -16,3 +16,4 @@ yfinance
 wolframalpha
 stackapi
 google-search-results
+arxiv

@@ -43,5 +43,7 @@ tools = load_tools(
         "stackexchange",
         "google-finance",
         "google-trends",
+        # "google-scholar",
+        "arxiv",
     ]
 )

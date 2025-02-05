@@ -23,7 +23,7 @@ A research assistant powered by LangGraph and LangChain. This assistant is desig
 
 1. Clone the repository:
     ```sh
-    git clone https://conceptcodes.github.com/research-agent.git
+    git clone https://github.com/conceptcodes/research-agent.git
     cd research-agent
     ```
 
@@ -47,11 +47,17 @@ A research assistant powered by LangGraph and LangChain. This assistant is desig
 2. Interact with the research assistant by typing your queries. Type `exit` to quit.
 
 ## Project Structure
-- [agent.py](http://_vscodecontentref_/0): Entry point of the application. Sets up the CLI and handles user input.
-- [llm.py](http://_vscodecontentref_/1): Configures the language model to be used.
-- [prompt.py](http://_vscodecontentref_/2): Contains the system message template for the assistant.
-- [tools.py](http://_vscodecontentref_/3): Defines various tools for searching and querying information.
-- [utils.py](http://_vscodecontentref_/4): Utility functions for displaying steps and handling errors.
+- [agent.py](/agent.py): Entry point of the application. Sets up the CLI and handles user input.
+- [llm.py](/lib/llm.py): Configures the language model to be used.
+- [prompt.py](/lib/prompt.py): Contains the system message template for the assistant.
+- [tools.py](/lib/tools.py): Defines various tools for searching and querying information.
+- [utils.py](/lib/utils.py): Utility functions for displaying steps and handling errors.
+
+## Roadmap
+- [ ] Add more tools for specialized searches.
+- [ ] Implement a feedback mechanism to improve the assistant's responses.
+- [ ] Enhance the summarization capabilities of the assistant.
+- [ ] Add support for more languages. (ES, FR, DE, JA, KO, HI, RU)
 
 ## License
 

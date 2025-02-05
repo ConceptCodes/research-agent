@@ -2,9 +2,8 @@ import os
 from langchain_ollama import ChatOllama
 from langchain_openai import ChatOpenAI
 
-OLLAMA_MODEL = "llama3.1"
-# OLLAMA_MODEL = "mistral"
-
+# OLLAMA_MODEL = "deepseek-r1" # currently does not support tools 😭
+OLLAMA_MODEL = "mistral"
 OPENAI_MODEL = "gpt-4"
 
 llm = None

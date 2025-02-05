@@ -1,5 +1,4 @@
 import sys
-import random
 from colorama import init
 from halo import Halo
 import warnings
@@ -14,7 +13,7 @@ from langgraph.prebuilt import create_react_agent
 from lib.llm import llm
 from lib.prompt import system_message
 from lib.tools import tools
-from lib.utils import display_step, get_error
+from lib.utils import display_step, get_error, get_random_thread_id
 
 init(strip=not sys.stdout.isatty())
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -28,10 +27,6 @@ langgraph_agent_executor = create_react_agent(
     checkpointer=checkpointer,
     state_modifier=system_message,
 )
-
-
-def get_random_thread_id():
-    return random.randint(1, 1000000)
 
 
 def setup_cli():
@@ -49,7 +44,7 @@ if __name__ == "__main__":
 
     while True:
         user_input = input("\n> ")
-        if user_input.lower() == "exit":
+        if user_input.lower() in ["exit", "quit", "q"]:
             print("Goodbye!")
             break
 
